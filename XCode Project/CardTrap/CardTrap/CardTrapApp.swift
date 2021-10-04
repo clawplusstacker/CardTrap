@@ -11,7 +11,7 @@ import SwiftUI
 struct CardTrapApp: App {
     var body: some Scene {
         WindowGroup {
-            CardAnimationView()
+            HomeScreenToCardContent()
         }
     }
 }

@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		0FAA1D722702973400DF8AE2 /* CardTrapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D712702973400DF8AE2 /* CardTrapApp.swift */; };
-		0FAA1D742702973400DF8AE2 /* CardAnimationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D732702973400DF8AE2 /* CardAnimationContentView.swift */; };
+		0FAA1D742702973400DF8AE2 /* CardDissapearContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D732702973400DF8AE2 /* CardDissapearContentView.swift */; };
 		0FAA1D762702973700DF8AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA1D752702973700DF8AE2 /* Assets.xcassets */; };
 		0FAA1D792702973700DF8AE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA1D782702973700DF8AE2 /* Preview Assets.xcassets */; };
 		0FAA1D842702973700DF8AE2 /* CardTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D832702973700DF8AE2 /* CardTrapTests.swift */; };
 		0FAA1D8F2702973700DF8AE2 /* CardTrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D8E2702973700DF8AE2 /* CardTrapUITests.swift */; };
+		0FF1956027055EC300CC861E /* HomeScreenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1955F27055EC300CC861E /* HomeScreenContentView.swift */; };
+		0FF1956227055ECF00CC861E /* SettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1956127055ECF00CC861E /* SettingsContentView.swift */; };
+		0FF1956427055EE200CC861E /* PreviewScreenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1956327055EE200CC861E /* PreviewScreenContentView.swift */; };
+		0FF1956627055F3100CC861E /* CardSwipeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1956527055F3100CC861E /* CardSwipeContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,7 @@
 /* Begin PBXFileReference section */
 		0FAA1D6E2702973400DF8AE2 /* CardTrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FAA1D712702973400DF8AE2 /* CardTrapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTrapApp.swift; sourceTree = "<group>"; };
-		0FAA1D732702973400DF8AE2 /* CardAnimationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardAnimationContentView.swift; sourceTree = "<group>"; };
+		0FAA1D732702973400DF8AE2 /* CardDissapearContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDissapearContentView.swift; sourceTree = "<group>"; };
 		0FAA1D752702973700DF8AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FAA1D782702973700DF8AE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FAA1D7A2702973700DF8AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +49,10 @@
 		0FAA1D8A2702973700DF8AE2 /* CardTrapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CardTrapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FAA1D8E2702973700DF8AE2 /* CardTrapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTrapUITests.swift; sourceTree = "<group>"; };
 		0FAA1D902702973700DF8AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FF1955F27055EC300CC861E /* HomeScreenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenContentView.swift; sourceTree = "<group>"; };
+		0FF1956127055ECF00CC861E /* SettingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContentView.swift; sourceTree = "<group>"; };
+		0FF1956327055EE200CC861E /* PreviewScreenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewScreenContentView.swift; sourceTree = "<group>"; };
+		0FF1956527055F3100CC861E /* CardSwipeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				0FAA1D712702973400DF8AE2 /* CardTrapApp.swift */,
-				0FAA1D732702973400DF8AE2 /* CardAnimationContentView.swift */,
+				0FF1955F27055EC300CC861E /* HomeScreenContentView.swift */,
+				0FF1956527055F3100CC861E /* CardSwipeContentView.swift */,
+				0FF1956127055ECF00CC861E /* SettingsContentView.swift */,
+				0FAA1D732702973400DF8AE2 /* CardDissapearContentView.swift */,
+				0FF1956327055EE200CC861E /* PreviewScreenContentView.swift */,
 				0FAA1D752702973700DF8AE2 /* Assets.xcassets */,
 				0FAA1D7A2702973700DF8AE2 /* Info.plist */,
 				0FAA1D772702973700DF8AE2 /* Preview Content */,
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FAA1D742702973400DF8AE2 /* CardAnimationContentView.swift in Sources */,
+				0FAA1D742702973400DF8AE2 /* CardDissapearContentView.swift in Sources */,
 				0FAA1D722702973400DF8AE2 /* CardTrapApp.swift in Sources */,
+				0FF1956027055EC300CC861E /* HomeScreenContentView.swift in Sources */,
+				0FF1956627055F3100CC861E /* CardSwipeContentView.swift in Sources */,
+				0FF1956227055ECF00CC861E /* SettingsContentView.swift in Sources */,
+				0FF1956427055EE200CC861E /* PreviewScreenContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
