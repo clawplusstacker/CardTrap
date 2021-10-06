@@ -12,23 +12,27 @@ struct HomeScreenToCardContent : View {
     
     @State private var homeScreenSelected = true
     
-    @State private var cardDissapear = false
-    @State private var cardSwipe = false
+    @State private var mainTrickView = false
+    
+    @State var selectedCard = ""
+    @State var selectedBack = ""
+    @State var selectedBGIMG = ""
 
+    
     
     var body: some View{
         
-      if cardDissapear{
+      if mainTrickView{
             
-            CardDissapearView(homeScreen: $homeScreenSelected, cardDissapear: $cardDissapear)
+        MainTrickView(homeScreen: $homeScreenSelected, mainTrickView: $mainTrickView, cardImage: selectedCard, backImage: selectedBack, backImageHold: selectedBack, bgIMG: selectedBGIMG)
             
             
-        }else if cardSwipe {
+        }else if mainTrickView {
             
             
         }else if homeScreenSelected {
             
-            HomeScreenView(cardDissapear: $cardDissapear, cardSwipe: $cardSwipe)
+            HomeScreenView(mainTrickView: $mainTrickView, selectedCard: $selectedCard, selectedBack: $selectedBack, selectedBGIMG: $selectedBGIMG)
             
         }
         
@@ -37,47 +41,93 @@ struct HomeScreenToCardContent : View {
 struct HomeScreenView : View {
     
     @State private var showingPreviewScreen = false
-    @State private var showingSettingsScreen = false
+    @State private var showingTutorialScreen = false
     
-    @Binding var cardDissapear : Bool
-    @Binding var cardSwipe : Bool
+    @Binding var mainTrickView : Bool
+    @Binding var selectedCard : String
+    @Binding var selectedBack : String
+    @Binding var selectedBGIMG : String
+
 
 
     
     var body: some View {
         
-        
-        Text ("CardTrap")
-        
-        
-        Button(action: {
+        VStack{
+
+            HStack{
+                Text("Card")
+                    .foregroundColor(Color.red)
+                    .font(.system(size: 95))
+                    .padding(.top, 150)
+                    .shadow(radius: 10)
+                    .blur(radius: 2)
+                Text("Trap")
+                    .foregroundColor(Color.white)
+                    .font(.system(size: 95))
+                    .padding(.top, 150)
+                    .shadow(radius: 10)
+                    .blur(radius: 2)
+
+            }
+         
+
+            Spacer()
             
-            showingPreviewScreen.toggle()
+            Button(action: {
+                
+                showingPreviewScreen.toggle()
+                
+            }, label: {
+                Text("START")
+                    .frame(width: 350, height: 50)
+            })
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(width: 350, height: 50)
+                .background(Color.clear)
+                .border(Color.white, width: 5)
+                .cornerRadius(15.0)
             
-        }, label: {
-            Text("Start!")
-        })
-        
-        .sheet(isPresented: $showingPreviewScreen, content: {
-            PreviewScreenView(cardDissapear: self.$cardDissapear, cardSwipe: self.$cardSwipe)
-        })
-        
-        
-        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-            Text("Tutorial")
-        })
-        
-        
-        Button(action: {
+            .sheet(isPresented: $showingPreviewScreen, content: {
+                PreviewScreenView(mainTrickView: self.$mainTrickView, selectedCard: $selectedCard, selectedBack: $selectedBack, selectedBG: $selectedBGIMG)
+            })
             
-            showingSettingsScreen.toggle()
             
-        }, label: {
-            Text("Settings")
-        })
-        .sheet(isPresented: $showingSettingsScreen, content: {
-            SettingsView()
-        })
+            Button(action: {
+                
+                showingTutorialScreen.toggle()
+                
+                
+            }, label: {
+                Text("TUTORIAL")
+                    .frame(width: 350, height: 50)
+            })
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding()
+                .frame(width: 350, height: 50)
+                .background(Color.clear)
+                .border(Color.white, width: 5)
+                .cornerRadius(15.0)
+               .padding(.bottom, 50)
+            
+            .sheet(isPresented: $showingTutorialScreen, content: {
+                TutorialView()
+            })
+        }
+        
+        
+        .background(
+            Image("homeScreenImage2")
+                .resizable()
+                .frame(width: 440, height: 930)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+        )
+        
+
+        
         
         
     }

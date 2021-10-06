@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F3377AD270BF27300098798 /* PictureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3377AC270BF27300098798 /* PictureData.swift */; };
+		0F3377AF270BF2AE00098798 /* cardData.json in Resources */ = {isa = PBXBuildFile; fileRef = 0F3377AE270BF2AE00098798 /* cardData.json */; };
+		0F3377B1270BFE5800098798 /* ImageURLandCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3377B0270BFE5800098798 /* ImageURLandCache.swift */; };
 		0FAA1D722702973400DF8AE2 /* CardTrapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D712702973400DF8AE2 /* CardTrapApp.swift */; };
-		0FAA1D742702973400DF8AE2 /* CardDissapearContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D732702973400DF8AE2 /* CardDissapearContentView.swift */; };
+		0FAA1D742702973400DF8AE2 /* MainTrickContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D732702973400DF8AE2 /* MainTrickContentView.swift */; };
 		0FAA1D762702973700DF8AE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA1D752702973700DF8AE2 /* Assets.xcassets */; };
 		0FAA1D792702973700DF8AE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FAA1D782702973700DF8AE2 /* Preview Assets.xcassets */; };
 		0FAA1D842702973700DF8AE2 /* CardTrapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D832702973700DF8AE2 /* CardTrapTests.swift */; };
 		0FAA1D8F2702973700DF8AE2 /* CardTrapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA1D8E2702973700DF8AE2 /* CardTrapUITests.swift */; };
 		0FF1956027055EC300CC861E /* HomeScreenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1955F27055EC300CC861E /* HomeScreenContentView.swift */; };
-		0FF1956227055ECF00CC861E /* SettingsContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1956127055ECF00CC861E /* SettingsContentView.swift */; };
 		0FF1956427055EE200CC861E /* PreviewScreenContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1956327055EE200CC861E /* PreviewScreenContentView.swift */; };
-		0FF1956627055F3100CC861E /* CardSwipeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF1956527055F3100CC861E /* CardSwipeContentView.swift */; };
+		0FF8D746270D6082008E0463 /* TutorialContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FF8D745270D6082008E0463 /* TutorialContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +39,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F3377AC270BF27300098798 /* PictureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureData.swift; sourceTree = "<group>"; };
+		0F3377AE270BF2AE00098798 /* cardData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cardData.json; sourceTree = "<group>"; };
+		0F3377B0270BFE5800098798 /* ImageURLandCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageURLandCache.swift; sourceTree = "<group>"; };
 		0FAA1D6E2702973400DF8AE2 /* CardTrap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardTrap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FAA1D712702973400DF8AE2 /* CardTrapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTrapApp.swift; sourceTree = "<group>"; };
-		0FAA1D732702973400DF8AE2 /* CardDissapearContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDissapearContentView.swift; sourceTree = "<group>"; };
+		0FAA1D732702973400DF8AE2 /* MainTrickContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTrickContentView.swift; sourceTree = "<group>"; };
 		0FAA1D752702973700DF8AE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FAA1D782702973700DF8AE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0FAA1D7A2702973700DF8AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,9 +55,8 @@
 		0FAA1D8E2702973700DF8AE2 /* CardTrapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTrapUITests.swift; sourceTree = "<group>"; };
 		0FAA1D902702973700DF8AE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0FF1955F27055EC300CC861E /* HomeScreenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenContentView.swift; sourceTree = "<group>"; };
-		0FF1956127055ECF00CC861E /* SettingsContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsContentView.swift; sourceTree = "<group>"; };
 		0FF1956327055EE200CC861E /* PreviewScreenContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewScreenContentView.swift; sourceTree = "<group>"; };
-		0FF1956527055F3100CC861E /* CardSwipeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSwipeContentView.swift; sourceTree = "<group>"; };
+		0FF8D745270D6082008E0463 /* TutorialContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,13 @@
 		0FAA1D702702973400DF8AE2 /* CardTrap */ = {
 			isa = PBXGroup;
 			children = (
+				0F3377AE270BF2AE00098798 /* cardData.json */,
 				0FAA1D712702973400DF8AE2 /* CardTrapApp.swift */,
+				0F3377B0270BFE5800098798 /* ImageURLandCache.swift */,
 				0FF1955F27055EC300CC861E /* HomeScreenContentView.swift */,
-				0FF1956527055F3100CC861E /* CardSwipeContentView.swift */,
-				0FF1956127055ECF00CC861E /* SettingsContentView.swift */,
-				0FAA1D732702973400DF8AE2 /* CardDissapearContentView.swift */,
+				0FF8D745270D6082008E0463 /* TutorialContentView.swift */,
+				0F3377AC270BF27300098798 /* PictureData.swift */,
+				0FAA1D732702973400DF8AE2 /* MainTrickContentView.swift */,
 				0FF1956327055EE200CC861E /* PreviewScreenContentView.swift */,
 				0FAA1D752702973700DF8AE2 /* Assets.xcassets */,
 				0FAA1D7A2702973700DF8AE2 /* Info.plist */,
@@ -247,6 +253,7 @@
 			files = (
 				0FAA1D792702973700DF8AE2 /* Preview Assets.xcassets in Resources */,
 				0FAA1D762702973700DF8AE2 /* Assets.xcassets in Resources */,
+				0F3377AF270BF2AE00098798 /* cardData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FAA1D742702973400DF8AE2 /* CardDissapearContentView.swift in Sources */,
+				0FAA1D742702973400DF8AE2 /* MainTrickContentView.swift in Sources */,
+				0FF8D746270D6082008E0463 /* TutorialContentView.swift in Sources */,
 				0FAA1D722702973400DF8AE2 /* CardTrapApp.swift in Sources */,
 				0FF1956027055EC300CC861E /* HomeScreenContentView.swift in Sources */,
-				0FF1956627055F3100CC861E /* CardSwipeContentView.swift in Sources */,
-				0FF1956227055ECF00CC861E /* SettingsContentView.swift in Sources */,
+				0F3377AD270BF27300098798 /* PictureData.swift in Sources */,
+				0F3377B1270BFE5800098798 /* ImageURLandCache.swift in Sources */,
 				0FF1956427055EE200CC861E /* PreviewScreenContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
